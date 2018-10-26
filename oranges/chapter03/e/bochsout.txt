@@ -1,0 +1,475 @@
+00000000000i[      ] Bochs x86 Emulator 2.6.9
+00000000000i[      ]   Built from SVN snapshot on April 9, 2017
+00000000000i[      ] Compiled on Apr  9 2017 at 09:49:25
+00000000000i[      ] System configuration
+00000000000i[      ]   processors: 1 (cores=1, HT threads=1)
+00000000000i[      ]   A20 line support: yes
+00000000000i[      ] IPS is set to 4000000
+00000000000i[      ] CPU configuration
+00000000000i[      ]   SMP support: no
+00000000000i[      ]   level: 6
+00000000000i[      ]   APIC support: xapic
+00000000000i[      ]   FPU support: yes
+00000000000i[      ]   MMX support: yes
+00000000000i[      ]   3dnow! support: no
+00000000000i[      ]   SEP support: yes
+00000000000i[      ]   SIMD support: sse2
+00000000000i[      ]   XSAVE support: no 
+00000000000i[      ]   AES support: no
+00000000000i[      ]   SHA support: no
+00000000000i[      ]   MOVBE support: no
+00000000000i[      ]   ADX support: no
+00000000000i[      ]   x86-64 support: yes
+00000000000i[      ]   1G paging support: no
+00000000000i[      ]   MWAIT support: yes
+00000000000i[      ]   VMX support: 1
+00000000000i[      ] Optimization configuration
+00000000000i[      ]   RepeatSpeedups support: yes
+00000000000i[      ]   Fast function calls: yes
+00000000000i[      ]   Handlers Chaining speedups: no
+00000000000i[      ] Devices configuration
+00000000000i[      ]   PCI support: i440FX i430FX
+00000000000i[      ]   Networking support: NE2000 E1000
+00000000000i[      ]   Sound support: SB16 ES1370
+00000000000i[      ]   USB support: UHCI OHCI EHCI xHCI
+00000000000i[      ]   VGA extension support: vbe cirrus voodoo
+00000000000i[MEM0  ] allocated memory at 06320020. after alignment, vector=06321000
+00000000000i[MEM0  ] 512.00MB
+00000000000i[MEM0  ] mem block size = 0x00020000, blocks=4096
+00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('C:\Program Files (x86)\Bochs-2.6.9/BIOS-bochs-latest')
+00000000000i[PLUGIN] init_dev of 'pci' plugin device by virtual method
+00000000000i[DEV   ] i440FX PMC present at device 0, function 0
+00000000000i[PLUGIN] init_dev of 'pci2isa' plugin device by virtual method
+00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
+00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
+00000000000i[CMOS  ] Using local time for initial clock
+00000000000i[CMOS  ] Setting initial clock to: Tue Aug 14 19:59:40 2018 (time0=1534247980)
+00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
+00000000000i[DMA   ] channel 4 used by cascade
+00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'pit' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'vga' plugin device by virtual method
+00000000000i[MEM0  ] Register memory access handlers: 0x0000000a0000 - 0x0000000bffff
+00000000000i[VGA   ] interval=200000, mode=realtime
+00000000000i[MEM0  ] Register memory access handlers: 0x0000e0000000 - 0x0000e0ffffff
+00000000000i[BXVGA ] VBE Bochs Display Extension Enabled
+00000000000i[WINGUI] Desktop Window dimensions: 1920 x 1080
+00000000000i[WINGUI] Number of Mouse Buttons = 8
+00000000000i[WINGUI] IME disabled
+00000000000i[MEM0  ] rom at 0xc0000/41472 ('C:\Program Files (x86)\Bochs-2.6.9/VGABIOS-lgpl-latest')
+00000000000i[PLUGIN] init_dev of 'floppy' plugin device by virtual method
+00000000000i[DMA   ] channel 2 used by Floppy Drive
+00000000000i[FLOPPY] fd0: 'D:\share\oranges\chapter03\e\freedos.img' ro=0, h=2,t=80,spt=18
+00000000000i[FLOPPY] fd1: 'D:\share\oranges\chapter03\e\pm.img' ro=0, h=2,t=80,spt=18
+00000000000i[FLOPPY] Using boot sequence floppy, none, none
+00000000000i[FLOPPY] Floppy boot signature check is enabled
+00000000000i[PLUGIN] init_dev of 'acpi' plugin device by virtual method
+00000000000i[DEV   ] ACPI Controller present at device 1, function 3
+00000000000i[PLUGIN] init_dev of 'ioapic' plugin device by virtual method
+00000000000i[IOAPIC] initializing I/O APIC
+00000000000i[MEM0  ] Register memory access handlers: 0x0000fec00000 - 0x0000fec00fff
+00000000000i[IOAPIC] IOAPIC enabled (base address = 0xfec00000)
+00000000000i[PLUGIN] init_dev of 'keyboard' plugin device by virtual method
+00000000000i[KBD   ] will paste characters every 400 keyboard ticks
+00000000000i[PLUGIN] init_dev of 'harddrv' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'pci_ide' plugin device by virtual method
+00000000000i[DEV   ] PIIX3 PCI IDE controller present at device 1, function 1
+00000000000i[PLUGIN] init_dev of 'unmapped' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'biosdev' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'speaker' plugin device by virtual method
+00000000000i[PCSPK ] Using lowlevel sound support for output
+00000000000i[PLUGIN] init_dev of 'extfpuirq' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'parallel' plugin device by virtual method
+00000000000i[PAR   ] parallel port 1 at 0x0378 irq 7
+00000000000i[PLUGIN] init_dev of 'serial' plugin device by virtual method
+00000000000i[SER   ] com1 at 0x03f8 irq 4 (mode: null)
+00000000000i[PLUGIN] init_dev of 'gameport' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'iodebug' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'usb_uhci' plugin device by virtual method
+00000000000i[DEV   ] USB UHCI present at device 1, function 2
+00000000000i[UHCI  ] USB UHCI initialized
+00000000000i[PLUGIN] register state of 'pci' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pci2isa' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'cmos' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'dma' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pic' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pit' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'vga' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'floppy' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'unmapped' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'biosdev' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'speaker' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'extfpuirq' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'parallel' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'serial' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'gameport' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'iodebug' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'usb_uhci' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'acpi' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'ioapic' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'keyboard' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'harddrv' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pci_ide' plugin device by virtual method
+00000000000i[SYS   ] bx_pc_system_c::Reset(HARDWARE) called
+00000000000i[CPU0  ] cpu hardware reset
+00000000000i[APIC0 ] allocate APIC id=0 (MMIO enabled) to 0x0000fee00000
+00000000000i[CPU0  ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00000000000i[CPU0  ] CPUID[0x00000001]: 00000633 00010800 00002028 1fcbfbff
+00000000000i[CPU0  ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00000000000i[CPU0  ] CPUID[0x80000000]: 80000008 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x80000001]: 00000000 00000000 00000101 2a100000
+00000000000i[CPU0  ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00000000000i[CPU0  ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00000000000i[CPU0  ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00000000000i[CPU0  ] CPUID[0x80000005]: 01ff01ff 01ff01ff 40020140 40020140
+00000000000i[CPU0  ] CPUID[0x80000006]: 00000000 42004200 02008140 00000000
+00000000000i[CPU0  ] CPUID[0x80000007]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x80000008]: 00003028 00000000 00000000 00000000
+00000000000i[PLUGIN] reset of 'pci' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pci2isa' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'cmos' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'dma' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pic' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pit' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'vga' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'floppy' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'acpi' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'ioapic' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'keyboard' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'harddrv' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pci_ide' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'unmapped' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'biosdev' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'speaker' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'extfpuirq' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'parallel' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'serial' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'gameport' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'iodebug' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'usb_uhci' plugin device by virtual method
+00000000000i[      ] Using debugger log file D:\share\oranges\chapter03\e\debugger.out
+00000000000i[      ] set SIGINT handler to bx_debug_ctrlc_handler
+00000004662i[BIOS  ] $Revision: 13073 $ $Date: 2017-02-16 22:43:52 +0100 (Do, 16. Feb 2017) $
+00000318050i[KBD   ] reset-disable command received
+00000320819i[BIOS  ] Starting rombios32
+00000321257i[BIOS  ] Shutdown flag 0
+00000321849i[BIOS  ] ram_size=0x20000000
+00000322292i[BIOS  ] ram_end=512MB
+00000362830i[BIOS  ] Found 1 cpu(s)
+00000376414i[BIOS  ] bios_table_addr: 0x000f9cd8 end=0x000fcc00
+00000609224i[WINGUI] dimension update x=720 y=400 fontheight=16 fontwidth=9 bpp=8
+00000704209i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+00001032138i[P2ISA ] PCI IRQ routing: PIRQA# set to 0x0b
+00001032157i[P2ISA ] PCI IRQ routing: PIRQB# set to 0x09
+00001032176i[P2ISA ] PCI IRQ routing: PIRQC# set to 0x0b
+00001032195i[P2ISA ] PCI IRQ routing: PIRQD# set to 0x09
+00001032205i[P2ISA ] write: ELCR2 = 0x0a
+00001032975i[BIOS  ] PIIX3/PIIX4 init: elcr=00 0a
+00001040698i[BIOS  ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
+00001042977i[BIOS  ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
+00001045095i[BIOS  ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
+00001045324i[PIDE  ] new BM-DMA address: 0xc000
+00001045940i[BIOS  ] region 4: 0x0000c000
+00001047954i[BIOS  ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020 class=0x0c03
+00001048158i[UHCI  ] new base address: 0xc020
+00001048774i[BIOS  ] region 4: 0x0000c020
+00001048902i[UHCI  ] new irq line = 9
+00001050797i[BIOS  ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
+00001051029i[ACPI  ] new irq line = 11
+00001051041i[ACPI  ] new irq line = 9
+00001051066i[ACPI  ] new PM base address: 0xb000
+00001051080i[ACPI  ] new SM base address: 0xb100
+00001051108i[PCI   ] setting SMRAM control register to 0x4a
+00001215201i[CPU0  ] Enter to System Management Mode
+00001215201i[CPU0  ] enter_system_management_mode: temporary disable VMX while in SMM mode
+00001215211i[CPU0  ] RSM: Resuming from System Management Mode
+00001379232i[PCI   ] setting SMRAM control register to 0x0a
+00001394139i[BIOS  ] MP table addr=0x000f9db0 MPC table addr=0x000f9ce0 size=0xc8
+00001395961i[BIOS  ] SMBIOS table addr=0x000f9dc0
+00001398151i[BIOS  ] ACPI tables: RSDP addr=0x000f9ee0 ACPI DATA addr=0x1fff0000 size=0xf72
+00001401385i[BIOS  ] Firmware waking vector 0x1fff00cc
+00001403180i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+00001403903i[BIOS  ] bios_table_cur_addr: 0x000f9f04
+00001531520i[VBIOS ] VGABios $Id: vgabios.c,v 1.76 2013/02/10 08:07:03 vruppert Exp $
+00001531591i[BXVGA ] VBE known Display Interface b0c0
+00001531623i[BXVGA ] VBE known Display Interface b0c5
+00001534548i[VBIOS ] VBE Bios $Id: vbe.c,v 1.65 2014/07/08 18:02:25 vruppert Exp $
+00002071153i[BIOS  ] Booting from 0000:7c00
+00008974954i[BIOS  ] int13_harddisk: function 00, unmapped device for ELDL=80
+00008980487i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=80
+00030675259i[BIOS  ] no PCI device with class code 0x010102 found at index 0
+00030683994i[BIOS  ] no PCI device with class code 0x010100 found at index 0
+00030692731i[BIOS  ] no PCI device with class code 0x010106 found at index 0
+00030701466i[BIOS  ] no PCI device with class code 0x010104 found at index 0
+00030710204i[BIOS  ] no PCI device with class code 0x01010a found at index 0
+00030718939i[BIOS  ] no PCI device with class code 0x010108 found at index 0
+00030727677i[BIOS  ] no PCI device with class code 0x01010e found at index 0
+00030736413i[BIOS  ] no PCI device with class code 0x01010c found at index 0
+00030745150i[BIOS  ] no PCI device with class code 0x010112 found at index 0
+00030753885i[BIOS  ] no PCI device with class code 0x010110 found at index 0
+00030762622i[BIOS  ] no PCI device with class code 0x010116 found at index 0
+00030771418i[BIOS  ] no PCI device with class code 0x010114 found at index 0
+00030780156i[BIOS  ] no PCI device with class code 0x01011a found at index 0
+00030788891i[BIOS  ] no PCI device with class code 0x010118 found at index 0
+00030797629i[BIOS  ] no PCI device with class code 0x01011e found at index 0
+00030806365i[BIOS  ] no PCI device with class code 0x01011c found at index 0
+00030815102i[BIOS  ] no PCI device with class code 0x010122 found at index 0
+00030823837i[BIOS  ] no PCI device with class code 0x010120 found at index 0
+00030832574i[BIOS  ] no PCI device with class code 0x010126 found at index 0
+00030841309i[BIOS  ] no PCI device with class code 0x010124 found at index 0
+00030850047i[BIOS  ] no PCI device with class code 0x01012a found at index 0
+00030858782i[BIOS  ] no PCI device with class code 0x010128 found at index 0
+00030867520i[BIOS  ] no PCI device with class code 0x01012e found at index 0
+00030876256i[BIOS  ] no PCI device with class code 0x01012c found at index 0
+00030884993i[BIOS  ] no PCI device with class code 0x010132 found at index 0
+00030893728i[BIOS  ] no PCI device with class code 0x010130 found at index 0
+00030902465i[BIOS  ] no PCI device with class code 0x010136 found at index 0
+00030911200i[BIOS  ] no PCI device with class code 0x010134 found at index 0
+00030919938i[BIOS  ] no PCI device with class code 0x01013a found at index 0
+00030928673i[BIOS  ] no PCI device with class code 0x010138 found at index 0
+00030937411i[BIOS  ] no PCI device with class code 0x01013e found at index 0
+00030946147i[BIOS  ] no PCI device with class code 0x01013c found at index 0
+00030954884i[BIOS  ] no PCI device with class code 0x010142 found at index 0
+00030963619i[BIOS  ] no PCI device with class code 0x010140 found at index 0
+00030972356i[BIOS  ] no PCI device with class code 0x010146 found at index 0
+00030981091i[BIOS  ] no PCI device with class code 0x010144 found at index 0
+00030989890i[BIOS  ] no PCI device with class code 0x01014a found at index 0
+00030998625i[BIOS  ] no PCI device with class code 0x010148 found at index 0
+00031007363i[BIOS  ] no PCI device with class code 0x01014e found at index 0
+00031016099i[BIOS  ] no PCI device with class code 0x01014c found at index 0
+00031024836i[BIOS  ] no PCI device with class code 0x010152 found at index 0
+00031033571i[BIOS  ] no PCI device with class code 0x010150 found at index 0
+00031042308i[BIOS  ] no PCI device with class code 0x010156 found at index 0
+00031051043i[BIOS  ] no PCI device with class code 0x010154 found at index 0
+00031059781i[BIOS  ] no PCI device with class code 0x01015a found at index 0
+00031068516i[BIOS  ] no PCI device with class code 0x010158 found at index 0
+00031077254i[BIOS  ] no PCI device with class code 0x01015e found at index 0
+00031085990i[BIOS  ] no PCI device with class code 0x01015c found at index 0
+00031094727i[BIOS  ] no PCI device with class code 0x010162 found at index 0
+00031103462i[BIOS  ] no PCI device with class code 0x010160 found at index 0
+00031112199i[BIOS  ] no PCI device with class code 0x010166 found at index 0
+00031120934i[BIOS  ] no PCI device with class code 0x010164 found at index 0
+00031129672i[BIOS  ] no PCI device with class code 0x01016a found at index 0
+00031138407i[BIOS  ] no PCI device with class code 0x010168 found at index 0
+00031147145i[BIOS  ] no PCI device with class code 0x01016e found at index 0
+00031155881i[BIOS  ] no PCI device with class code 0x01016c found at index 0
+00031164618i[BIOS  ] no PCI device with class code 0x010172 found at index 0
+00031173353i[BIOS  ] no PCI device with class code 0x010170 found at index 0
+00031182090i[BIOS  ] no PCI device with class code 0x010176 found at index 0
+00031190825i[BIOS  ] no PCI device with class code 0x010174 found at index 0
+00031199563i[BIOS  ] no PCI device with class code 0x01017a found at index 0
+00031208359i[BIOS  ] no PCI device with class code 0x010178 found at index 0
+00031217097i[BIOS  ] no PCI device with class code 0x01017e found at index 0
+00031225833i[BIOS  ] no PCI device with class code 0x01017c found at index 0
+00031234570i[BIOS  ] no PCI device with class code 0x010182 found at index 0
+00031324890i[BIOS  ] no PCI device with class code 0x010180 found at index 1
+00031333627i[BIOS  ] no PCI device with class code 0x010186 found at index 0
+00031342362i[BIOS  ] no PCI device with class code 0x010184 found at index 0
+00031351100i[BIOS  ] no PCI device with class code 0x01018a found at index 0
+00031359835i[BIOS  ] no PCI device with class code 0x010188 found at index 0
+00031368573i[BIOS  ] no PCI device with class code 0x01018e found at index 0
+00031377309i[BIOS  ] no PCI device with class code 0x01018c found at index 0
+00031386046i[BIOS  ] no PCI device with class code 0x010192 found at index 0
+00031394781i[BIOS  ] no PCI device with class code 0x010190 found at index 0
+00031403518i[BIOS  ] no PCI device with class code 0x010196 found at index 0
+00031412253i[BIOS  ] no PCI device with class code 0x010194 found at index 0
+00031420991i[BIOS  ] no PCI device with class code 0x01019a found at index 0
+00031429787i[BIOS  ] no PCI device with class code 0x010198 found at index 0
+00031438525i[BIOS  ] no PCI device with class code 0x01019e found at index 0
+00031447261i[BIOS  ] no PCI device with class code 0x01019c found at index 0
+00031455999i[BIOS  ] no PCI device with class code 0x0101a2 found at index 0
+00031464735i[BIOS  ] no PCI device with class code 0x0101a0 found at index 0
+00031473473i[BIOS  ] no PCI device with class code 0x0101a6 found at index 0
+00031482209i[BIOS  ] no PCI device with class code 0x0101a4 found at index 0
+00031490948i[BIOS  ] no PCI device with class code 0x0101aa found at index 0
+00031499684i[BIOS  ] no PCI device with class code 0x0101a8 found at index 0
+00031508423i[BIOS  ] no PCI device with class code 0x0101ae found at index 0
+00031517160i[BIOS  ] no PCI device with class code 0x0101ac found at index 0
+00031525898i[BIOS  ] no PCI device with class code 0x0101b2 found at index 0
+00031534634i[BIOS  ] no PCI device with class code 0x0101b0 found at index 0
+00031543372i[BIOS  ] no PCI device with class code 0x0101b6 found at index 0
+00031552108i[BIOS  ] no PCI device with class code 0x0101b4 found at index 0
+00031560847i[BIOS  ] no PCI device with class code 0x0101ba found at index 0
+00031569583i[BIOS  ] no PCI device with class code 0x0101b8 found at index 0
+00031578322i[BIOS  ] no PCI device with class code 0x0101be found at index 0
+00031587059i[BIOS  ] no PCI device with class code 0x0101bc found at index 0
+00031595797i[BIOS  ] no PCI device with class code 0x0101c2 found at index 0
+00031604533i[BIOS  ] no PCI device with class code 0x0101c0 found at index 0
+00031613271i[BIOS  ] no PCI device with class code 0x0101c6 found at index 0
+00031622007i[BIOS  ] no PCI device with class code 0x0101c4 found at index 0
+00031630746i[BIOS  ] no PCI device with class code 0x0101ca found at index 0
+00031639482i[BIOS  ] no PCI device with class code 0x0101c8 found at index 0
+00031648282i[BIOS  ] no PCI device with class code 0x0101ce found at index 0
+00031657019i[BIOS  ] no PCI device with class code 0x0101cc found at index 0
+00031665757i[BIOS  ] no PCI device with class code 0x0101d2 found at index 0
+00031674493i[BIOS  ] no PCI device with class code 0x0101d0 found at index 0
+00031683231i[BIOS  ] no PCI device with class code 0x0101d6 found at index 0
+00031691967i[BIOS  ] no PCI device with class code 0x0101d4 found at index 0
+00031700706i[BIOS  ] no PCI device with class code 0x0101da found at index 0
+00031709442i[BIOS  ] no PCI device with class code 0x0101d8 found at index 0
+00031718181i[BIOS  ] no PCI device with class code 0x0101de found at index 0
+00031726918i[BIOS  ] no PCI device with class code 0x0101dc found at index 0
+00031735656i[BIOS  ] no PCI device with class code 0x0101e2 found at index 0
+00031744392i[BIOS  ] no PCI device with class code 0x0101e0 found at index 0
+00031753130i[BIOS  ] no PCI device with class code 0x0101e6 found at index 0
+00031761866i[BIOS  ] no PCI device with class code 0x0101e4 found at index 0
+00031770605i[BIOS  ] no PCI device with class code 0x0101ea found at index 0
+00031779341i[BIOS  ] no PCI device with class code 0x0101e8 found at index 0
+00031788080i[BIOS  ] no PCI device with class code 0x0101ee found at index 0
+00031796817i[BIOS  ] no PCI device with class code 0x0101ec found at index 0
+00031805555i[BIOS  ] no PCI device with class code 0x0101f2 found at index 0
+00031814291i[BIOS  ] no PCI device with class code 0x0101f0 found at index 0
+00031823029i[BIOS  ] no PCI device with class code 0x0101f6 found at index 0
+00031831765i[BIOS  ] no PCI device with class code 0x0101f4 found at index 0
+00031840504i[BIOS  ] no PCI device with class code 0x0101fa found at index 0
+00031849240i[BIOS  ] no PCI device with class code 0x0101f8 found at index 0
+00031857979i[BIOS  ] no PCI device with class code 0x0101fe found at index 0
+00031866777i[BIOS  ] no PCI device with class code 0x0101fc found at index 0
+00031875517i[BIOS  ] no PCI device with class code 0x010103 found at index 0
+00031884252i[BIOS  ] no PCI device with class code 0x010101 found at index 0
+00031892989i[BIOS  ] no PCI device with class code 0x010107 found at index 0
+00031901724i[BIOS  ] no PCI device with class code 0x010105 found at index 0
+00031910462i[BIOS  ] no PCI device with class code 0x01010b found at index 0
+00031919197i[BIOS  ] no PCI device with class code 0x010109 found at index 0
+00031927935i[BIOS  ] no PCI device with class code 0x01010f found at index 0
+00031936671i[BIOS  ] no PCI device with class code 0x01010d found at index 0
+00031945408i[BIOS  ] no PCI device with class code 0x010113 found at index 0
+00031954143i[BIOS  ] no PCI device with class code 0x010111 found at index 0
+00031962880i[BIOS  ] no PCI device with class code 0x010117 found at index 0
+00031971615i[BIOS  ] no PCI device with class code 0x010115 found at index 0
+00031980353i[BIOS  ] no PCI device with class code 0x01011b found at index 0
+00031989088i[BIOS  ] no PCI device with class code 0x010119 found at index 0
+00031997826i[BIOS  ] no PCI device with class code 0x01011f found at index 0
+00032006562i[BIOS  ] no PCI device with class code 0x01011d found at index 0
+00032015299i[BIOS  ] no PCI device with class code 0x010123 found at index 0
+00032024034i[BIOS  ] no PCI device with class code 0x010121 found at index 0
+00032032771i[BIOS  ] no PCI device with class code 0x010127 found at index 0
+00032041506i[BIOS  ] no PCI device with class code 0x010125 found at index 0
+00032050244i[BIOS  ] no PCI device with class code 0x01012b found at index 0
+00032058979i[BIOS  ] no PCI device with class code 0x010129 found at index 0
+00032067717i[BIOS  ] no PCI device with class code 0x01012f found at index 0
+00032076453i[BIOS  ] no PCI device with class code 0x01012d found at index 0
+00032085251i[BIOS  ] no PCI device with class code 0x010133 found at index 0
+00032093986i[BIOS  ] no PCI device with class code 0x010131 found at index 0
+00032102723i[BIOS  ] no PCI device with class code 0x010137 found at index 0
+00032111458i[BIOS  ] no PCI device with class code 0x010135 found at index 0
+00032120196i[BIOS  ] no PCI device with class code 0x01013b found at index 0
+00032128931i[BIOS  ] no PCI device with class code 0x010139 found at index 0
+00032137669i[BIOS  ] no PCI device with class code 0x01013f found at index 0
+00032146405i[BIOS  ] no PCI device with class code 0x01013d found at index 0
+00032155142i[BIOS  ] no PCI device with class code 0x010143 found at index 0
+00032163877i[BIOS  ] no PCI device with class code 0x010141 found at index 0
+00032172614i[BIOS  ] no PCI device with class code 0x010147 found at index 0
+00032181349i[BIOS  ] no PCI device with class code 0x010145 found at index 0
+00032190087i[BIOS  ] no PCI device with class code 0x01014b found at index 0
+00032198822i[BIOS  ] no PCI device with class code 0x010149 found at index 0
+00032207560i[BIOS  ] no PCI device with class code 0x01014f found at index 0
+00032216296i[BIOS  ] no PCI device with class code 0x01014d found at index 0
+00032225033i[BIOS  ] no PCI device with class code 0x010153 found at index 0
+00032233768i[BIOS  ] no PCI device with class code 0x010151 found at index 0
+00032242505i[BIOS  ] no PCI device with class code 0x010157 found at index 0
+00032251240i[BIOS  ] no PCI device with class code 0x010155 found at index 0
+00032259978i[BIOS  ] no PCI device with class code 0x01015b found at index 0
+00032268713i[BIOS  ] no PCI device with class code 0x010159 found at index 0
+00032277451i[BIOS  ] no PCI device with class code 0x01015f found at index 0
+00032286187i[BIOS  ] no PCI device with class code 0x01015d found at index 0
+00032294924i[BIOS  ] no PCI device with class code 0x010163 found at index 0
+00032303720i[BIOS  ] no PCI device with class code 0x010161 found at index 0
+00032312457i[BIOS  ] no PCI device with class code 0x010167 found at index 0
+00032321192i[BIOS  ] no PCI device with class code 0x010165 found at index 0
+00032329930i[BIOS  ] no PCI device with class code 0x01016b found at index 0
+00032338665i[BIOS  ] no PCI device with class code 0x010169 found at index 0
+00032347403i[BIOS  ] no PCI device with class code 0x01016f found at index 0
+00032356139i[BIOS  ] no PCI device with class code 0x01016d found at index 0
+00032364876i[BIOS  ] no PCI device with class code 0x010173 found at index 0
+00032373611i[BIOS  ] no PCI device with class code 0x010171 found at index 0
+00032382348i[BIOS  ] no PCI device with class code 0x010177 found at index 0
+00032391083i[BIOS  ] no PCI device with class code 0x010175 found at index 0
+00032399821i[BIOS  ] no PCI device with class code 0x01017b found at index 0
+00032408556i[BIOS  ] no PCI device with class code 0x010179 found at index 0
+00032417294i[BIOS  ] no PCI device with class code 0x01017f found at index 0
+00032426030i[BIOS  ] no PCI device with class code 0x01017d found at index 0
+00032434767i[BIOS  ] no PCI device with class code 0x010183 found at index 0
+00032443502i[BIOS  ] no PCI device with class code 0x010181 found at index 0
+00032452239i[BIOS  ] no PCI device with class code 0x010187 found at index 0
+00032460974i[BIOS  ] no PCI device with class code 0x010185 found at index 0
+00032469712i[BIOS  ] no PCI device with class code 0x01018b found at index 0
+00032478447i[BIOS  ] no PCI device with class code 0x010189 found at index 0
+00032487185i[BIOS  ] no PCI device with class code 0x01018f found at index 0
+00032495921i[BIOS  ] no PCI device with class code 0x01018d found at index 0
+00032504658i[BIOS  ] no PCI device with class code 0x010193 found at index 0
+00032513393i[BIOS  ] no PCI device with class code 0x010191 found at index 0
+00032522191i[BIOS  ] no PCI device with class code 0x010197 found at index 0
+00032530926i[BIOS  ] no PCI device with class code 0x010195 found at index 0
+00032539664i[BIOS  ] no PCI device with class code 0x01019b found at index 0
+00032548399i[BIOS  ] no PCI device with class code 0x010199 found at index 0
+00032557137i[BIOS  ] no PCI device with class code 0x01019f found at index 0
+00032565873i[BIOS  ] no PCI device with class code 0x01019d found at index 0
+00032574611i[BIOS  ] no PCI device with class code 0x0101a3 found at index 0
+00032583347i[BIOS  ] no PCI device with class code 0x0101a1 found at index 0
+00032592085i[BIOS  ] no PCI device with class code 0x0101a7 found at index 0
+00032600821i[BIOS  ] no PCI device with class code 0x0101a5 found at index 0
+00032609560i[BIOS  ] no PCI device with class code 0x0101ab found at index 0
+00032618296i[BIOS  ] no PCI device with class code 0x0101a9 found at index 0
+00032627035i[BIOS  ] no PCI device with class code 0x0101af found at index 0
+00032635772i[BIOS  ] no PCI device with class code 0x0101ad found at index 0
+00032644510i[BIOS  ] no PCI device with class code 0x0101b3 found at index 0
+00032653246i[BIOS  ] no PCI device with class code 0x0101b1 found at index 0
+00032661984i[BIOS  ] no PCI device with class code 0x0101b7 found at index 0
+00032670720i[BIOS  ] no PCI device with class code 0x0101b5 found at index 0
+00032679459i[BIOS  ] no PCI device with class code 0x0101bb found at index 0
+00032688195i[BIOS  ] no PCI device with class code 0x0101b9 found at index 0
+00032696934i[BIOS  ] no PCI device with class code 0x0101bf found at index 0
+00032705671i[BIOS  ] no PCI device with class code 0x0101bd found at index 0
+00032714409i[BIOS  ] no PCI device with class code 0x0101c3 found at index 0
+00032723145i[BIOS  ] no PCI device with class code 0x0101c1 found at index 0
+00032731883i[BIOS  ] no PCI device with class code 0x0101c7 found at index 0
+00032740619i[BIOS  ] no PCI device with class code 0x0101c5 found at index 0
+00032749419i[BIOS  ] no PCI device with class code 0x0101cb found at index 0
+00032758155i[BIOS  ] no PCI device with class code 0x0101c9 found at index 0
+00032766894i[BIOS  ] no PCI device with class code 0x0101cf found at index 0
+00032775631i[BIOS  ] no PCI device with class code 0x0101cd found at index 0
+00032784369i[BIOS  ] no PCI device with class code 0x0101d3 found at index 0
+00032793105i[BIOS  ] no PCI device with class code 0x0101d1 found at index 0
+00032801843i[BIOS  ] no PCI device with class code 0x0101d7 found at index 0
+00032810579i[BIOS  ] no PCI device with class code 0x0101d5 found at index 0
+00032819318i[BIOS  ] no PCI device with class code 0x0101db found at index 0
+00032828054i[BIOS  ] no PCI device with class code 0x0101d9 found at index 0
+00032836793i[BIOS  ] no PCI device with class code 0x0101df found at index 0
+00032845530i[BIOS  ] no PCI device with class code 0x0101dd found at index 0
+00032854268i[BIOS  ] no PCI device with class code 0x0101e3 found at index 0
+00032863004i[BIOS  ] no PCI device with class code 0x0101e1 found at index 0
+00032871742i[BIOS  ] no PCI device with class code 0x0101e7 found at index 0
+00032880478i[BIOS  ] no PCI device with class code 0x0101e5 found at index 0
+00032889217i[BIOS  ] no PCI device with class code 0x0101eb found at index 0
+00032897953i[BIOS  ] no PCI device with class code 0x0101e9 found at index 0
+00032906692i[BIOS  ] no PCI device with class code 0x0101ef found at index 0
+00032915429i[BIOS  ] no PCI device with class code 0x0101ed found at index 0
+00032924167i[BIOS  ] no PCI device with class code 0x0101f3 found at index 0
+00032932903i[BIOS  ] no PCI device with class code 0x0101f1 found at index 0
+00032941641i[BIOS  ] no PCI device with class code 0x0101f7 found at index 0
+00032950377i[BIOS  ] no PCI device with class code 0x0101f5 found at index 0
+00032959116i[BIOS  ] no PCI device with class code 0x0101fb found at index 0
+00032967913i[BIOS  ] no PCI device with class code 0x0101f9 found at index 0
+00032976652i[BIOS  ] no PCI device with class code 0x0101ff found at index 0
+00032985389i[BIOS  ] no PCI device with class code 0x0101fd found at index 0
+00049484059i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=80
+00049487673i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=80
+00049491293i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=81
+00049494907i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=81
+00049498527i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=82
+00049502141i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=82
+00049505761i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=83
+00049509375i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=83
+00049512995i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=84
+00049516609i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=84
+00049520229i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=85
+00049523843i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=85
+00049527463i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=86
+00049531077i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=86
+00049534697i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=87
+00049538311i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=87
+12927045880i[CPU0  ] [12927045880] Stopped on MAGIC BREAKPOINT

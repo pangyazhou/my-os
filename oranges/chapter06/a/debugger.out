@@ -1,0 +1,11 @@
+Next at t=0
+(0) [0x0000fffffff0] f000:fff0 (unk. ctxt): jmpf 0xf000:e05b          ; ea5be000f0
+<bochs:1> c
+(0) Magic breakpoint
+Next at t=4718240
+(0) [0x00000003102d] 0008:000000000003102d (unk. ctxt): ret                       ; c3
+<bochs:2> c
+(0) Magic breakpoint
+Next at t=13935680365
+(0) [0x00000003102d] 0008:000000000003102d (unk. ctxt): ret                       ; c3
+<bochs:3> 

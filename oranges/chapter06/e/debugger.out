@@ -1,0 +1,7 @@
+Next at t=0
+(0) [0x0000fffffff0] f000:fff0 (unk. ctxt): jmpf 0xf000:e05b          ; ea5be000f0
+<bochs:1> c
+(0).[2524381309] [0x000000030ea9] 0008:0000000000030ea9 (unk. ctxt): rep movsd dword ptr es:[edi], dword ptr ds:[esi] ; f3a5
+Next at t=2524381310
+(0) [0x0000fffffff0] f000:fff0 (unk. ctxt): jmpf 0xf000:e05b          ; ea5be000f0
+<bochs:2> 

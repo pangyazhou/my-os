@@ -1,0 +1,17 @@
+Next at t=0
+(0) [0x0000fffffff0] f000:fff0 (unk. ctxt): jmpf 0xf000:e05b          ; ea5be000f0
+<bochs:1> c
+(0) Magic breakpoint
+Next at t=63947638702
+(0) [0x00000000bb3e] 0010:000000000000003e (unk. ctxt): call .+15 (0x0000bb52)    ; e80f000000
+<bochs:2> n
+Next at t=63947638782
+(0) [0x00000000bb43] 0010:0000000000000043 (unk. ctxt): int 0x80                  ; cd80
+<bochs:3> n
+Next at t=63947638787
+(0) [0x00000000bb45] 0010:0000000000000045 (unk. ctxt): sti                       ; fb
+<bochs:4> c
+(0) Magic breakpoint
+Next at t=63947638790
+(0) [0x00000000bbac] 0010:00000000000000ac (unk. ctxt): mov ax, 0x0020            ; 66b82000
+<bochs:5> c

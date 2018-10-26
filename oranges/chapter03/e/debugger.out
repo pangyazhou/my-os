@@ -1,0 +1,39 @@
+Next at t=0
+(0) [0x0000fffffff0] f000:fff0 (unk. ctxt): jmpf 0xf000:e05b          ; ea5be000f0
+<bochs:1> c
+(0) Magic breakpoint
+Next at t=12927045880
+(0) [0x00000000b1b2] 0b0b:0102 (unk. ctxt): jmp .+1319 (0x0000b6dc)   ; e92705
+<bochs:2> n
+Next at t=12927045881
+(0) [0x00000000b6dc] 0b0b:062c (unk. ctxt): mov ax, cs                ; 8cc8
+<bochs:3> n
+Next at t=12927045882
+(0) [0x00000000b6de] 0b0b:062e (unk. ctxt): mov ds, ax                ; 8ed8
+<bochs:4> sreg
+es:0x0b0b, dh=0x00009300, dl=0xb0b0ffff, valid=1
+	Data segment, base=0x0000b0b0, limit=0x0000ffff, Read/Write, Accessed
+cs:0x0b0b, dh=0x00009300, dl=0xb0b0ffff, valid=1
+	Data segment, base=0x0000b0b0, limit=0x0000ffff, Read/Write, Accessed
+ss:0x0b0b, dh=0x00009300, dl=0xb0b0ffff, valid=1
+	Data segment, base=0x0000b0b0, limit=0x0000ffff, Read/Write, Accessed
+ds:0x0b0b, dh=0x00009300, dl=0xb0b0ffff, valid=1
+	Data segment, base=0x0000b0b0, limit=0x0000ffff, Read/Write, Accessed
+fs:0x0000, dh=0x00009300, dl=0x0000ffff, valid=1
+	Data segment, base=0x00000000, limit=0x0000ffff, Read/Write, Accessed
+gs:0x0000, dh=0x00009300, dl=0x0000ffff, valid=1
+	Data segment, base=0x00000000, limit=0x0000ffff, Read/Write, Accessed
+ldtr:0x0000, dh=0x00008200, dl=0x0000ffff, valid=1
+tr:0x0000, dh=0x00008b00, dl=0x0000ffff, valid=1
+gdtr:base=0x0000000000002828, limit=0x17
+idtr:base=0x0000000000000000, limit=0x3ff
+<bochs:5> creg
+CR0=0x60000010: pg CD NW ac wp ne ET ts em mp pe
+CR2=page fault laddr=0x0000000000000000
+CR3=0x000000000000
+    PCD=page-level cache disable=0
+    PWT=page-level write-through=0
+CR4=0x00000000: pke smap smep osxsave pcid fsgsbase smx vmx osxmmexcpt umip osfxsr pce pge mce pae pse de tsd pvi vme
+CR8: 0x0
+EFER=0x00000000: ffxsr nxe lma lme sce
+<bochs:6> 
